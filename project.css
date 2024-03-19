@@ -1,0 +1,414 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 50000px;
+}
+ul{
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  /* Small */
+@media (min-width: 768px) {
+    .img {
+        height: 10px;
+        width: 10px;
+    }
+    .container{
+        width: 1670px;
+    }
+    .content{
+        width: 300px;
+    }
+    .text{
+        height: 500px;
+        width: 300px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .img {
+        width: 20px;
+        height: 20px;
+    }
+    .container{
+        width: 1870px;
+    }
+    .content{
+        width: 500px;
+    }
+    .text{
+        height: 500px;
+        width: 300px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.page1{
+    width: 1470px;
+    background-image: url("https://github.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/blob/main/images/landing.jpg?raw=true");
+    height: 800px;
+    background-size: cover;
+}
+.page1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* أسود مع انعكاس 50% */
+    z-index: 1;
+}
+img{
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    height: 40px;
+}
+header .container{
+    display: flex;
+    min-height: 97px;
+    justify-content: space-between;
+    text-align: center;
+}
+header nav{
+    flex: 2;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    
+}
+header nav a{
+    color: white;
+    font-size: 22px;
+    list-style-type: none;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    header nav .toggle-menu {
+        display: none;
+    }
+}
+header nav ul li{
+    float: left;
+    padding: 16px;
+}
+@media (max-width: 767px) {
+    header nav ul {
+        display: none;
+    }
+}
+i{
+    color: white;
+    font-size: 22px;
+    padding-left: 10px;
+}
+hr{
+    width: 1150px;
+    position: absolute;
+    left: 200px;
+    color: white;
+    height: 1px;
+    background-color: white;
+}
+.text{
+    display: flex;
+    z-index: 2;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    color: white;
+    background-color: #149ec4;
+}
+.text p{
+    margin-top: 10px;
+    line-height: 30px;
+}
+.text p,h2{
+    margin-left: 30px;
+}
+.text .content{
+    padding: 50px;
+}
+.text i{
+    position: absolute;
+    left: 5px;
+}
+.text #pp{
+    position: absolute;
+    top: 100px;
+    left: 1400px;
+    transform: rotate(180deg);
+}
+.bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+}
+.bullets li{
+    position: absolute;
+    top: 780px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: #149ec4;
+    border-bottom: 1px solid #149ec4;
+    padding-bottom: 38px;
+}
+.page2{
+    height: 800px;
+    background-color: white;
+}
+
+h1{
+    margin-left: 50%;
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 30;
+}
+h1+hr+p{
+    color: gray;
+    margin-left: 400px;
+    margin-top: 30px;
+}
+@media (min-width: 768px) {
+    .srv .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    }
+}
+.page2 hr{
+    width: 200px;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+h3{
+    color: #149ec4;
+}
+.srv{
+    margin-top: 80px;
+}
+.page2 i+p{
+    color: gray;
+}
+.page2 i{
+    color: black;
+    width: 30px;
+    height: 30px;
+    margin-left: -80px;
+}
+.p1,.p3{
+    margin-bottom: 80px;
+}
+.page3{
+    height: 750px;
+    position: relative;
+    background-image: url("https://github.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/blob/main/images/design-features.jpg?raw=true");
+    overflow: hidden;
+}
+.page3::after {
+    content: "";
+    position: absolute;
+    top: 2220;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+.page3 img{
+    height: 400px; 
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    position: absolute;
+}
+.page3 .text{
+    display: flex;
+    z-index: 2;
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    color: white;
+    background-color: #0e4e60;
+    left: 900px;
+}
+.page3 .text h2{
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: 20px
+}
+.page3 .text ul li {
+    padding: 15px 0;
+    position: relative;
+}
+.page3 .text ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 2px;
+}
+.page3 ul li{
+    position: absolute;
+    top: 50px;
+    left: -300px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.page4{
+    height: 600px;
+    background-color: white;
+    position: relative;
+}
+.page4 h1{
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 30;
+}
+
+.page4 ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 430px;
+    margin-top: 100px;
+    text-align: center; /* لتوسيط العناصر */
+}
+.page4 ul li {
+    float: left;
+    padding: 30px;
+    border: 1px solid white;
+}
+.page4 .active{
+    width: 20px;
+    height: 0px;
+    background-color: #149ec4;
+}
+.page4 .image-container{
+    
+    flex-wrap: wrap;
+    position: relative;
+    display: grid;
+    grid-area: "box1","box2";
+    grid-template-columns: repeat(4, minmax(auto,100%)); 
+    grid-gap: 200px; 
+    align-items: start;
+}
+.page4 .image-container .box1{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    align-items: start;
+}
+.page4 .image-container .box1 img{
+    width: 300px;
+    height: 250px;
+    transition: transform .3s;
+}
+.caption::before{
+    content: "";
+    background-color: white;
+    width: 300px;
+    height: 200px;
+}
+.caption:hover{
+    transform:translateY(20px);
+}
+.page4 .image-container .box1:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+@media (min-width: 768px) {
+    .page4 .image-container .box1 {
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 1199px) {
+    .page4 .image-container .box1 {
+        flex-basis: 25%;
+    }
+}
+.page4 .image-container .box1 .caption {
+    position: absolute;
+    left: 0;
+    padding: 20px; 
+    background-color: white;
+    width: 100%;
+    transition: 0.3s;
+    bottom: -100%;
+}
+.page4 .image-container .box1 .caption h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.page4 .image-container .box1 .caption p {
+    color:#149ec4;
+}
+.box2 img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 280px;
+    
+}
+.box2:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+.page4 .container2{
+    position: absolute;
+    left: 150px;
+    top: 400px;
+    width: 800px;
+}
+.box1,.box2{
+    overflow: hidden;
+    /* position: relative; */
+}
+.caption{
+    /* position: absolute; */
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    transition: bottom 0.3s;
+}
+.caption{
+    background-color: white;
+    width: 300px;
+    height: 100px;
+}
+.page4 .box1,.box2:hover .caption{
+        bottom: 0px;
+}
